@@ -290,3 +290,245 @@
         margin: 40px 0px;
     }
 }
+
+
+/* this is the section about us */
+.about-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.about-content-container {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-content-header {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 530;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.about-content-header::after {
+    content: "";
+    width: 80px;
+    background-color: #00aeef;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 10%;
+}
+.about-text-and-other-container {
+    width: 45em;
+    position: relative;
+    top: 80px;
+    bottom: 50px;
+}
+.about-text {
+    position: relative;
+    line-height: 30px;
+    color: #707070;
+}
+
+/* this is about the light blue rating */
+.other1 {
+    display: flex;
+    justify-content: space-between;
+}
+.other-text {
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #333333;
+    cursor: context-menu;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.other2,
+.other3 {
+    width: 100%;
+    background-color: #00aeef;
+    height: 3%;
+    position: absolute;
+}
+.other2 {
+    background-color: #eeeeee;
+    width: 100%;
+}
+.other3 {
+    background-color: #00aeef;
+    width: 80%;
+}
+.other3.edo1 {
+    width: 65%;
+}
+.other3.edo2 {
+    width: 85%;
+}
+.other-positioning {
+    margin: 50px 0px;
+}
+.horizontal-line {
+    border: 1px solid #eeeeee;
+    margin: 100px 150px;
+}
+
+
+.about-detail-container {
+    display: flex;
+    justify-content: center;
+    margin: 0px 30px;
+}
+.about-detail {
+    text-align: center;
+}
+.about-detail1 {
+    font-size: 50px;
+    color: #00aeef;
+}
+.about-detail2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+.about-detail.eda2 {
+    margin: 0px 100px;
+}
+.about-detail.eda4 {
+    margin-left: 100px;
+}
+.about-detail3 {
+    text-transform: capitalize;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 530;
+}
+
+
+/* responsive for the about us section */
+@media(max-width: 1423px) {
+    .about-text-and-other-container {
+        width: 35em;
+    }
+}
+@media(max-width: 1255px) {
+    .about-text-and-other-container {
+        width: 25em;
+    }
+    .about-text {
+        width: 400px;
+    }
+    .about-img img {
+        width: 400px;
+    }
+}
+@media(max-width: 900px) {
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-img img {
+        width: 500px;
+    }
+    .about-content-header {
+        margin-top: 50px;
+    }
+    .about-text-and-other-container {
+        width: 35em;
+    }
+}
+@media(max-width: 680px) {
+    .about-text-and-other-container {
+        width: 25em;
+    }
+    .about-img img {
+        width: 450px;
+    }
+    .other-text {
+        margin-right: 20px;
+    }
+}
+@media(max-width: 522px) {
+    .about-text-and-other-container {
+        width: 15em;
+    }
+    .about-img img {
+        width: 350px;
+    }
+    .about-content-header {
+        font-size: 30px;
+    }
+    .about-content-header::after {
+        top: 50px;
+    }
+    .about-text {
+        width: 300px;
+    }
+    .about-content-container {
+        margin-left: -100px;
+    }
+}
+@media(max-width: 400px) {
+    .about-img img {
+        width: 300px;
+    }
+    .about-content-container {
+        margin-left: -50px;
+    }
+}
+@media(max-width: 340px) {
+    .about-img img {
+        width: 200px;
+    }
+    .about-content-container {
+        margin-left: -50px;
+    }
+    .about-content-header::after {
+        left: 25%;
+        top: 50px;
+    }
+    .about-text {
+        width: 200px;
+    }
+    .about-text-and-other-container {
+        width: 10em;
+    }
+    .about-content-container {
+        margin-left: -25px;
+    }
+}
+
+/* responsive for about detail */
+@media(max-width: 890px) {
+    .about-detail-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 814px) {
+    .about-detail.eda4 {
+        margin-top: 50px;
+    }
+}
+@media(max-width: 650px) {
+    .about-detail.eda3 {
+        margin-top: 50px;
+    }
+}
+@media(max-width: 566px) {
+    .about-detail.eda2 {
+        margin-top: 50px;
+    }
+}
+@media(max-width: 325px) {
+    .about-detail.eda4 {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+}
