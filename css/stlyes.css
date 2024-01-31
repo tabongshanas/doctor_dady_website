@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.landing-top-container {
+    background-color: #f4f4f4;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.top-info {
+    display: flex;
+    margin-right: 50px;
+    padding-left: 5px;
+}
+
+.info1 {
+    position: relative;
+    cursor: pointer;
+}
+.info1:hover .infor-details {
+    display: inline-block;
+}
+.info1 span {
+    font-size: 17px;
+    color: #707070;
+}
+.info1 .fa {
+    color: #00aeef;
+    margin-right: 5px;
+}
+.info1.edi1 {
+    margin-left: 40px;
+}
+.info1.edi1 .infor-details {
+    left: 0;
+}
+
+/* this is a hover display details for top info */
+.infor-details {
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
+    width: fit-content;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 7px;
+    position: absolute;
+    left: 15%;
+    top: 25px;
+    transition: 0.4s;
+    display: none;
+}
+
+/* this is about social icons */
+.social-icon-container {
+    display: flex;
+}
+.icon {
+    position: relative;
+}
+.icon a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #707070;
+    transition: 0.4s;
+    margin: 0px 10px;
+}
+.icon:hover .infor-details {
+    left: -20px;
+    white-space: nowrap;
+}
+
+.icon a:hover {
+    cursor: pointer;
+    color: #00aeef;
+}
+.icon:hover .infor-details {
+    display: inline-block;
+}
+
+
+/* responsive of the top landing page */
+@media(max-width: 776px) {
+    .info1 span {
+        display: none;
+    }
+    .info1 .infor-details {
+        display: none;
+    }
+}
+
+
+/* this is the intro of the web */
+.landing-page-intro-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 20px;
+}
+.primary-btn a {
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: #00aeef;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.4s;
+    white-space: nowrap;
+    border: 1px solid #00aeef;
+}
+.primary-btn a:hover {
+    cursor: pointer;
+    color: #00aeef;
+    background-color: transparent;
+}
+/* this concerns the links */
+.logo {
+    cursor: pointer;
+}
+.header-link-container ul {
+    display: flex;
+}
+.header-link-container ul li {
+    list-style: none;
+    margin: 0px 20px;
+}
+.header-link-container ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.header-link-container .fa {
+    font-size: 23px;
+}
+.header-link-container ul li a:hover {
+    cursor: pointer;
+    color: #00aeef;
+}
+
+
+/* this is about landing page content container */
+.landing-page-content-container {
+    background-image: url('/images/background-images/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 0;
+    /* height: 90vh; */
+    width: 100%;
+}
+.landing-page-content-container::before {
+    content: "";
+    background: linear-gradient(45deg, #2c455d, #00012c);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.believe-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 250px 20px;
+}
+.welcoming-text {
+    text-transform: capitalize;
+    font-size: 60px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 80px;
+}
+.welcoming-text2 {
+    font-size: 20px;
+    color: #c3c3c3;
+    margin: 50px 0px;
+    line-height: 30px;
+}
+.btns {
+    display: flex;
+    margin: 0px 50px;
+}
+.btns .primary-btn.edp1 {
+    margin-right: 50px;
+}
+.btns .primary-btn.edp2 a {
+    background-color: transparent;
+    border: 1px solid #00aeef;
+    color: #00aeef;
+}
+.btns .primary-btn.edp2 a:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #00aeef;
+}
+
+/* responsive for landing page content */
+@media(max-width: 1120px) {
+    .welcoming-text {
+        font-size: 50px;
+    }
+    .welcoming-text2 {
+        font-size: 15px;
+    }
+    .believe-container {
+        padding: 200px 20px;
+    }
+}
+@media(max-width: 918px) {
+    .welcoming-text {
+        font-size: 40px;
+    }
+    .welcoming-text2 {
+        font-size: 15px;
+    }
+    .believe-container {
+        padding: 150px 20px;
+    }
+}
+@media(max-width: 712px) {
+    .welcoming-text {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .welcoming-text2 {
+        font-size: 15px;
+    }
+    .believe-container {
+        padding: 100px 20px;
+    }
+}
+@media(max-width: 545px) {
+    .welcoming-text {
+        font-size: 27px;
+        line-height: 50px;
+    }
+    .welcoming-text2 {
+        font-size: 13px;
+    }
+    .believe-container {
+        padding: 80px 20px;
+    }
+}
+@media(max-width: 488px) {
+    .welcoming-text {
+        font-size: 27px;
+        line-height: 50px;
+    }
+    .welcoming-text2 {
+        font-size: 13px;
+    }
+    .believe-container {
+        padding: 80px 20px;
+    }
+    .btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width: 480px) {
+    .btns .primary-btn.edp2 {
+        margin-top: 50px;
+    }
+    .btns .primary-btn.edp1 {
+        margin-right: 0px;
+    }
+}
+@media(max-width: 486px) {
+    .welcoming-text {
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .welcoming-text2 {
+        line-height: 20px;
+        margin: 40px 0px;
+    }
+}
