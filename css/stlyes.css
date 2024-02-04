@@ -937,9 +937,6 @@
 .dentist-img.edd3 {
     background-image: url('/images/background-images/11.png');
 }
-.dentist-img:hover .dentist-icon {
-    animation: bring_dentist-icon 1s ease forwards;
-}
 .dentist-name-container {
     background: linear-gradient(to right, #2c455d, #00012c);
     padding: 20px 0px;
@@ -967,6 +964,11 @@
     position: absolute;
     right: -100%;
     bottom: 150px;
+    transition: 0.8s;
+}
+
+.dentist-img:hover .dentist-icon {
+    right: 25%;
 }
 
 .main-dentist-icon a {
@@ -989,12 +991,6 @@
 
 
 /* this is the responsive for dentist */
-
-@keyframes bring_dentist-icon {
-    100% {
-        right: 25%;
-    }
-}
 
 @media(max-width: 1359px) {
     .dentist-img.edd3 {
