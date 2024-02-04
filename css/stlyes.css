@@ -962,13 +962,15 @@
 .dentist-icon {
     display: flex;
     position: absolute;
-    right: -100%;
+    right: -50%;
     bottom: 150px;
     transition: 0.8s;
+    opacity: 0;
 }
 
 .dentist-img:hover .dentist-icon {
     right: 25%;
+    opacity: 1;
 }
 
 .main-dentist-icon a {
