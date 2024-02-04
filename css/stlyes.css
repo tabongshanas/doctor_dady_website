@@ -547,6 +547,7 @@
     justify-content: center;
     align-items: center;
     padding: 100px 0px;
+    margin-top: 200px;
 }
 .service-container::before {
     content: "";
@@ -671,6 +672,9 @@
     .service-img-video img {
         width: 500px;
     }
+    .service-container {
+        margin-top: 100px;
+    }
 }
 @media(max-width: 650px) {
     .service-img-video img {
@@ -703,5 +707,187 @@
     }
     .service-header .about-content-header::after {
         left: 0;
+    }
+}
+
+
+
+/* this is the appointment area */
+.appointment-container {
+    background-image: url('/images/background-images/12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 0;
+    width: 100%;
+    height: 80vh;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.appointment-container::before {
+    content: "";
+    background: linear-gradient(45deg, #2c455d, #00012c);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.appointment-header {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 520;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.appointment-line {
+    border: 3px solid #00aeef;
+    width: 100px;
+    margin-top: 25px;
+}
+
+.appointment-message-area {
+    margin-top: 50px;
+}
+.message-area {
+    display: flex;
+    justify-content: center;
+}
+.main-input {
+    position: relative;
+}
+.main-input input {
+    width: 40em;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px 30px;
+    font-size: 15px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    color: #fff;
+    border: none;
+}
+.main-input input:focus {
+    border: 1px solid #00aeef;
+}
+
+.main-input select {
+    appearance: none;
+    width: 40em;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-input select:focus {
+    border: 1px solid #00aeef;
+}
+.main-input select option {
+    background-color: #fff;
+    color: #000;
+}
+.main-input.edm1 {
+    margin: 40px 0px;
+}
+.message-area1.edm2 {
+    margin-left: 40px;
+}
+
+.message-text-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+.message-text-area textarea {
+    width: 93em;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 30px;
+    padding-left: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.message-text-area textarea:focus {
+    border: 1px solid #00aeef;
+}
+
+.primary-btn.edp3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+} 
+
+/* this is the responsive of the message area */
+@media(max-width: 1300px) {
+    .main-input input {
+        width: 30em;
+    }
+    .main-input select {
+        width: 30em;
+    }
+    .message-text-area textarea {
+        width: 70em;
+    }
+}
+@media(max-width: 1010px) {
+    .main-input input {
+        width: 20em;
+    }
+    .main-input select {
+        width: 20em;
+    }
+    .message-text-area textarea {
+        width: 48em;
+    }
+    .appointment-header {
+        font-size: 40px;
+    }
+    .appointment-container {
+        height: 70vh;
+    }
+}
+@media(max-width: 700px) {
+    .appointment-container::before {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .message-area {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media(max-width: 679px) {
+    .message-area1.edm2 {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .message-area1 {
+        margin-right: 20px;
+    }
+    .appointment-container {
+        height: 100vh;
+    }
+    .main-input input {
+        width: 100%;
+    }
+    .appointment-header {
+        font-size: 30px;
+        text-align: center;
+    }
+    .primary-btn.edp3 a {
+        font-size: 15px;
     }
 }
