@@ -1231,3 +1231,216 @@
         width: 600px;
     }
 }
+
+
+/* this is the footer section */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url('/images/background-images/7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 100px;
+}
+.footer-container::before {
+    content: '';
+    background: linear-gradient(to right, #2c455d, #00012c);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.footer-local-container {
+    width: 400px;
+    position: relative;
+    color: white;
+    margin-right: 50px;
+}
+.footer-text {
+    font-size: 20px;
+    margin: 20px 0px;
+    line-height: 30px;
+}
+.top-info.edt1 {
+    display: flex;
+    flex-direction: column;
+}
+.info1.edi1.edi2 {
+    margin-left: 0px;
+}
+.info1.edi3 {
+    margin: 10px 0px;
+}
+.footer-local-container .top-info.edt1 span {
+    color: white;
+    display: inline;
+}
+
+.footer-header {
+    position: relative;
+    text-transform: capitalize;
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.opening-and-quick-container {
+    display: flex;
+}
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 250px;
+}
+.main-container.edm4 {
+    width: 200px;
+    margin-left: 30px;
+}
+.footer-header-details {
+    line-height: 40px;
+}
+.footer-detail {
+    position: relative;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-detail a {
+    color: white;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.footer-detail a:hover {
+    cursor: pointer;
+    color: #00aeef;
+}
+
+.newsletter-container {
+    width: 300px;
+    position: relative;
+    margin-left: 30px;
+}
+.newsletter-header {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.newsletter-text {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 40px;
+    margin: 20px 0px;
+}
+
+.newsletter-input-area {
+    position: relative;
+}
+.newsletter-input input {
+    padding: 15px;
+    outline: none;
+    position: absolute;
+}
+.send a {
+    text-decoration: none;
+    color: white;
+    background-color: #00aeef;
+    padding: 15px 20px;
+    position: absolute;
+    left: 192px;
+    transition: 0.5s;
+}
+.send a:hover {
+    background-color: #000;
+}
+.social-icon-container.eds2 {
+    position: relative;
+    top: 70px;
+}
+.social-icon-container.eds2 .icon a {
+    color: white;
+}
+
+
+.footer-line {
+    border: 1px solid rgba(166, 166, 166, 0.286);
+    width: 100%;
+    position: relative;
+    top: 80px;
+}
+.footer-end {
+    position: relative;
+    top: 130px;
+    margin-bottom: 60px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #b7b7b7;
+}
+.footer-end a {
+    text-decoration: none;
+    color: #00aeef;
+    transition: 0.4s;
+}
+.footer-end a:hover {
+    cursor: pointer;
+    color: #0e99cc;
+}
+
+
+
+/* this is the responsive of the footer section */
+@media(max-width: 1462px) {
+    .newsletter-container {
+        margin-top: 50px;
+    }
+}
+@media(max-width: 1132px) {
+    .footer-section.edf3 {
+        margin-top: 50px;
+    }
+}
+@media(max-width: 908px) {
+    .footer-section.edf4 {
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+}
+@media(max-width: 890px) {
+    .footer-local-container {
+        margin-right: 0px;
+    }
+}
+@media(max-width: 748px) {
+    .main-container.edm4 {
+        margin-left: 1px;
+    }
+    .footer-section.edf4 {
+        margin-right: 0px;
+    }
+}
+@media(max-width: 460px) {
+    .newsletter-input-area {
+        margin-left: -50px;
+    }
+}
