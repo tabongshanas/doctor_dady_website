@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* this is the shanas page section */
+.shanas-page-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.shanas-img-container {
+    background-image: url('/images/background-images/shanas-page2.jpg');
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.shanas-img-container:hover .ownner-name {
+    cursor: pointer;
+    left: 100%;
+    opacity: 0;
+}
+.shanas-img-container:hover .shanas-img-content-container {
+    cursor: pointer;
+    left: 0px;
+    opacity: 1;
+}
+
+.ownner-name {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: radial-gradient(farthest-corner at 100px 100px ,  #2c455d 50%, #00012c 30%);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 30px;
+    color: #fff;
+    transition: 0.4s;
+    white-space: nowrap;
+}
+.ownner-name span {
+    color: #00aeef;
+}
+
+.shanas-img-content-container {
+    font-size: 30px;
+    line-height: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    left: -100%;
+}
+.shanas-img-content-container::after {
+    content: "";
+    background: radial-gradient(farthest-corner at 100px 100px ,  #2c455d 40%, #00012c 30%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+}
+
+.shanas-img-content-container p {
+    padding: 0px 30px;
+}
+.shanas-img-content-container abbr {
+    text-decoration: none;
+}
+.shanas-img-content-container span {
+    color: #00aeef;
+}
+.shanas-img-content-container .lss1 {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.shanas-primary-btn {
+    margin-top: 50px;
+}
+.shanas-primary-btn a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 25px;
+    border: 1px solid #00aeef;
+    padding: 15px 20px;
+    color: #00aeef;
+    transition: 0.5s;
+}
+
+.shanas-primary-btn.eds3 {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.shanas-primary-btn a:hover {
+    cursor: pointer;
+    background-color: #00aeef;
+    color: #fff;
+}
+
+.shanas-text {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 60px;
+    margin-top: 50px;
+    padding: 0px 30px;
+    padding-bottom: 50px;
+}
+
+/* this is the responsive of shanas page */
+@media(max-width: 1333px) {
+    .shanas-text {
+        font-size: 25px;
+    }
+}
+@media(max-width: 1110px) {
+    .shanas-img-container {
+        height: 600px;
+    }
+}
+@media(max-width: 930px) {
+    .shanas-img-container {
+        height: 600px;
+        width: 100%;
+    }
+    .shanas-text {
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+@media(max-width: 500px) {
+    .shanas-img-container {
+        height: 300px;
+        width: 100%;
+    }
+    .shanas-text {
+        font-size: 17px;
+        line-height: 35px;
+        margin-top: 20px;
+    }
+    .shanas-img-content-container {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .shanas-primary-btn {
+        margin-top: 20px;
+    }
+    .shanas-primary-btn a {
+        font-size: 18px;
+    }
+    .ownner-name {
+        font-size: 18px;
+    }
+}
+@media(max-width: 388px) {
+    .shanas-img-content-container {
+        line-height: 30px;
+    }
+}
+@media(max-width: 320px) {
+    .ownner-name {
+        font-size: 15px;
+    }
+    .shanas-img-content-container {
+        font-size: 15px;
+    }
+    .shanas-primary-btn a {
+        font-size: 15px;
+    }
+}
