@@ -629,7 +629,7 @@ label #times {
 
 
 /* this is the service section */
-.service-container {
+/* .service-container {
     background-image: url('/images/background-images/13.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -713,10 +713,10 @@ label #times {
 .play-icon a:hover {
     cursor: pointer;
     background-color: #000;
-}
+} */
 
 /* this is the responsive for services */
-@media(max-width: 1180px) {
+/* @media(max-width: 1180px) {
     .service-img-video img {
         width: 500px;
     }
@@ -800,6 +800,247 @@ label #times {
     }
     .service-header .about-content-header::after {
         left: 0;
+    }
+} */
+
+
+.service-container {
+    margin-top: 150px;
+    height: 70vh;
+    background-image: url('/images/background-images/13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-container::after {
+    content: "";
+    background: linear-gradient(45deg, #2c455d, #00012c);
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.service-header {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    color: white;
+}
+.service-content {
+    display: flex;
+}
+
+.service-header .service-line {
+    background-color: #00aeef;
+    width: 100px;
+    height: 7px;
+    margin-top: 20px;
+}
+
+.service-main {
+    margin: 0px 30px;
+    z-index: 10;
+}
+.service-item-container {
+    margin-top: 50px;
+}
+.main-service-item {
+    display: flex;
+}
+.item p {
+    font-size: 20px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-service-item.edm5 {
+    margin-top: 100px;
+}
+.item.edi4,
+.item.edi5,
+.item.edi4 {
+    margin: 0px 50px;
+} 
+
+.service-img-container {
+    position: relative;
+    width: 600px;
+    margin: 0px 30px;
+}
+.service-img img {
+    width: 600px;
+    z-index: 10;
+    margin-top: 50px;
+    position: relative;
+}
+.play-icon a {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    background-color: #00aeef;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.5s;
+    z-index: 10;
+}
+.play-icon a:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+/* this is the responsive for services */
+@media(max-width: 1400px) {
+    .service-img img {
+        width: 500px;
+    }
+    .service-header {
+        font-size: 30px;
+    }
+    .item.edi4,
+    .item.edi5,
+    .item.edi4 {
+        margin: 0px 30px;
+    }
+    .play-icon a {
+        top: 40%;
+        left: 40%;
+    } 
+
+    .service-container {
+        height: 60vh;
+    }
+    .service-container::after {
+        height: 60%;
+    }
+}
+@media(max-width: 1100px) {
+    .service-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service-container {
+        height: 90vh;
+    }
+    .service-container::after {
+        height: 90%;
+    }
+}
+
+
+@media(max-width: 700px) {
+    .service-container::after {
+        height: 92%;
+    }
+}
+@media(max-width: 521px) {
+    .service-container::after {
+        height: 100%;
+    }
+    .service-container {
+        position: relative;
+    }
+}
+
+
+@media(max-width: 645px) {
+    .service-img img {
+        width: 400px;
+        margin-left: 50px;
+    }
+    .play-icon a {
+        top: 50%;
+        left: 30%;
+    } 
+}
+@media(max-width: 582px) {
+    .item.edi4,
+    .item.edi5,
+    .item.edi4 {
+        margin: 0px 20px;
+    }
+    .service-item-container {
+        margin-left: 50px;
+    }
+    .service-header {
+        font-size: 20px;
+        text-align: center;
+    }
+    .service-header .service-line {
+        width: 50px;
+        position: relative;
+        left: 35%;
+    }
+    .service-main {
+        margin-left: 50px;
+    }
+}
+@media(max-width: 555px) {
+    .item p {
+        font-size: 15px;
+    }
+}
+@media(max-width: 450px) {
+    .item img {
+        width: 30px;
+    }
+}
+@media(max-width: 445px) {
+    .item img {
+        width: 25px;
+    }
+    .item p {
+        font-size: 12px;
+    }
+    .service-item-container {
+        margin-left: 100px;
+    }
+}
+
+
+
+@media(max-width: 522px) {
+    .service-img img {
+        margin-left: 80px;
+    }
+}
+@media(max-width: 522px) {
+    .service-img img {
+        width: 300px;
+        margin-left: 130px;
+    }
+    .play-icon a {
+        top: 50%;
+        left: 45%;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    } 
+    .service-container {
+        height: 100vh;
+    }
+    .service-container::after {
+        height: 100%;
+    }
+}
+@media(max-width: 355px) {
+    .service-img img {
+        margin-left: 146px;
     }
 }
 
