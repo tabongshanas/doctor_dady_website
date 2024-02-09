@@ -17,7 +17,6 @@
     background-size: cover;
     background-position: center;
     height: 700px;
-    margin-top: 50px;
     overflow: hidden;
     position: relative;
 }
@@ -40,10 +39,12 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: radial-gradient(farthest-corner at 100px 100px ,  #2c455d 50%, #00012c 30%);
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
     left: 50%;
+    width: 100%;
     transform: translateX(-50%);
-    padding: 20px 30px;
+    padding: 20px 0px;
+    text-align: center;
     color: #fff;
     transition: 0.4s;
     white-space: nowrap;
@@ -90,7 +91,7 @@
 }
 .shanas-img-content-container .lss1 {
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .shanas-primary-btn {
@@ -151,7 +152,7 @@
 }
 @media(max-width: 500px) {
     .shanas-img-container {
-        height: 300px;
+        height: 350px;
         width: 100%;
     }
     .shanas-text {
