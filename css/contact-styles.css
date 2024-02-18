@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pages-content-container {
+    background-image: url('/images/background-images/12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 80px 0px;
+}
+.pages-content-container::before {
+    content: '';
+    background: linear-gradient(45deg, #2c455d, #00012c);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+
+
+.pages-text {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 5px;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.home-transfer-container {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    color: #333333;
+    margin-top: 20px;
+}
+.home-transfer-container span {
+    margin: 0px 8px;
+}
+.home-transfer-container i {
+    transition: 0.4s;
+}
+.home-transfer-container i:hover {
+    cursor: pointer;
+    color: #00aeef;
+}
+
+
+.google-map {
+    margin: 100px 0px;
+}
+.google-map iframe {
+    width: 70em;
+    height: 30em;
+}
+
+
+
+.detail-contact-infor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get-details-container {
+    background-color: #00aeef;
+    width: 300px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: #fff;
+}
+.get-detail-text-container {
+    padding: 15px 0px;
+}
+.get-detail-header {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.get-detail-sub {
+    font-size: 17px;
+}
+
+
+.message-area-container {
+    margin-left: 50px;
+}
+.get-in-touch-container {
+    display: flex;
+}
+.message-area-text {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+.line {
+    background-color: #00aeef;
+    width: 80px;
+    height: 5px;
+    margin-top: 20px;
+}
+
+.input-message {
+    margin-top: 50px;
+}
+.input-area {
+    display: flex;
+}
+.input-area input {
+    width: 27em;
+    padding: 10px 15px;
+    outline: none;
+}
+.input-area input:focus {
+    border: 1px solid #00aeef;
+}
+.input.edi7 input {
+    margin-left: 50px;
+    outline: none;
+}
+.message{
+    margin-top: 30px;
+}
+.message textarea {
+    width: 100%;
+    padding: 20px 25px;
+    outline: none;
+}
+.message textarea:focus {
+    border: 1px solid #00aeef;
+}
+.primary-btn.edp4.edps1 a {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.primary-btn.edp4.edps1 {
+    margin-top: 50px;
+    margin-left: 0;
+}
+
+
+
+/* responsive of contact */
+@media(max-width: 1170px) {
+    .google-map iframe {
+        width: 60em;
+        height: 30em;
+    }
+    .input-area input {
+        width: 20em;
+    }
+}
+@media(max-width: 1020px) {
+    .google-map iframe {
+        width: 50em;
+        height: 30em;
+    }
+    .input-area input {
+        width: 16em;
+    }
+    .input.edi7 input {
+        margin-left: 20px;
+    }
+    .message-area-text {
+        font-size: 25px;
+    }
+}
+@media(max-width: 850px) {
+    .google-map iframe {
+        width: 45em;
+        height: 30em;
+    }
+    .get-in-touch-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .get-details-container {
+        width: 480px;
+    }
+    .message-area-container {
+        margin-left: 0px;
+    }
+    .input-area input {
+        width: 17em;
+    }
+    .message-area-text {
+        margin-top: 30px;
+    }
+    .primary-btn.edp4.edps1 a {
+        font-size: 15px;
+    }
+}
+@media(max-width: 760px) {
+    .google-map iframe {
+        width: 30em;
+        height: 30em;
+    }
+}
+@media(max-width: 535px) {
+    .google-map iframe {
+        width: 25em;
+        height: 25em;
+    }
+    .get-details-container {
+        width: 400px;
+    }
+    .input-area input {
+        width: 14em;
+    }
+    .message-area-text {
+        font-size: 20px;
+    }
+    .input.edi7 input {
+        margin-left: 10px;
+    }
+}
+@media(max-width: 445px) {
+    .google-map iframe {
+        width: 20em;
+        height: 20em;
+    }
+    .get-details-container {
+        width: 300px;
+    }
+    .input-area input {
+        width: 12em;
+    }
+    .pages-content-container {
+        padding: 50px 0px;
+    }
+}
